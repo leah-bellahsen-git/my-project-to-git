@@ -39,14 +39,14 @@ import AllUsers from './components/allUsers';
 
 
 function App() {
-  
+
 
   return (
 
     <BrowserRouter>
       <div className="App">
         {/* <Orders /> */}
-        <MyAppBar/> 
+        <MyAppBar />
         {/* <AdminAppBar/> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -54,14 +54,13 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/view' element={<BasicDemo />} />
           <Route path='/PreviousOrders' element={<PreviousOrders />} />
-          <Route path='/adminAppBar' element={<AdminAppBar/>}/>
-          <Route path='/orders' element={<Orders/>}/>
-          <Route path='/adminAppBar' element={<AdminAppBar/>} />
-          <Route path='/viewAdmin' element={<ViewAdmin/>} />
-          <Route path='/allUsers' element={<AllUsers/>} />
+          <Route path='/adminAppBar' element={<AdminAppBar />} />
+          <Route path='/orders' element={<Orders />} />
+          <Route path='/adminAppBar' element={<AdminAppBar />} />
+          <Route path='/viewAdmin' element={<ViewAdmin />} />
+          <Route path='/allUsers' element={<AllUsers />} />
 
         </Routes>
-
       </div>
 
     </BrowserRouter>
